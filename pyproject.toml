@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=42", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["sumofit"]
+
+[tool.setuptools.package_data]
+# Inclui o requirements.txt e o README.md no pacote
+my_package = ["requirements.txt", "README.md"]
+
+[tool.setuptools.dependencies]
+# Dependências listadas no requirements.txt
+install_requires = [
+    "numpy>=1.21",
+    "scipy>=1.7",
+    "matplotlib>=3.4"
+]
+
+[tool.setuptools.version]
+use_scm_version = true
