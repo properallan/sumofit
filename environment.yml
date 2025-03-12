@@ -1,31 +1,9 @@
+name: sumofit
 channels:
-- conda-forge
-- defaults
+  - conda-forge
 dependencies:
-- python=3.13.2
-- _libgcc_mutex
-- _openmp_mutex
-- bzip2
-- ca-certificates
-- ld_impl_linux-64
-- libexpat
-- libffi
-- libgcc
-- libgcc-ng
-- libgomp
-- liblzma
-- libmpdec
-- libsqlite
-- libuuid
-- libzlib
-- ncurses
-- openssl
-- pip
-- python
-- python_abi
-- pyyaml
-- readline
-- tk
-- tzdata
-- yaml
-name: myenv
+  - python=3.12.9
+  - ca-certificates
+  - openssl
+  - pyyaml
+prefix: /home/ppiper/miniforge3/envs/sumofit
